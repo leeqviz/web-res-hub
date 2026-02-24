@@ -1,7 +1,7 @@
 import { useAppStore } from "@/stores";
-import type { ResourceType } from "@/types";
+import type { ResourceTypeValue } from "@/types";
 
-export function FilterTypeButton({ type }: { type: ResourceType }) {
+export function FilterTypeButton({ type }: { type: ResourceTypeValue }) {
   const { activeType, setActiveType } = useAppStore();
 
   return (

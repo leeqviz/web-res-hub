@@ -1,15 +1,17 @@
-import type { resourceCategories, resourceTypes } from "@/constants";
+import type { ResourceCategory, ResourceType } from "@/constants";
 
-export type ResourceCategory = (typeof resourceCategories)[number];
+export type ResourceCategoryValue =
+  (typeof ResourceCategory)[keyof typeof ResourceCategory];
 
-export type ResourceType = (typeof resourceTypes)[number];
+export type ResourceTypeValue =
+  (typeof ResourceType)[keyof typeof ResourceType];
 
 export interface Resource {
   id: string;
   title: string;
   description: string;
   url: string;
-  category: ResourceCategory;
-  type: ResourceType;
+  category: ResourceCategoryValue;
+  type: ResourceTypeValue;
   tags: string[];
 }

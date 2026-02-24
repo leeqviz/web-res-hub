@@ -1,4 +1,4 @@
-import { resources } from "@/constants";
+import { ResourceCategory, resources, ResourceType } from "@/constants";
 import { useMemo } from "react";
 
 interface UseFilteredResourcesParams {
@@ -24,9 +24,11 @@ export function useFilteredResources({
         );
 
       const matchesCategory =
-        activeCategory === "All" || resource.category === activeCategory;
+        activeCategory === ResourceCategory.All ||
+        resource.category === activeCategory;
 
-      const matchesType = activeType === "All" || resource.type === activeType;
+      const matchesType =
+        activeType === ResourceType.All || resource.type === activeType;
 
       return matchesSearch && matchesCategory && matchesType;
     });

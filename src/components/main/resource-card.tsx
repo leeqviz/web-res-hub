@@ -1,3 +1,4 @@
+import { ResourceCategory } from "@/constants";
 import type { Resource } from "@/types";
 import {
   BookOpen,
@@ -63,17 +64,17 @@ export function ResourceCard({ resource }: { resource: Resource }) {
       <div className="flex justify-between items-start mb-4">
         <div
           className={`p-2 rounded-lg ${
-            resource.category === "HTML"
+            resource.category === ResourceCategory.HTML
               ? "bg-orange-50 text-orange-600"
-              : resource.category === "CSS"
+              : resource.category === ResourceCategory.CSS
                 ? "bg-blue-50 text-blue-600"
-                : resource.category === "JS"
+                : resource.category === ResourceCategory.JS
                   ? "bg-yellow-50 text-yellow-600"
-                  : resource.category === "Git"
+                  : resource.category === ResourceCategory.Git
                     ? "bg-red-50 text-red-600"
-                    : resource.category === "SQL"
+                    : resource.category === ResourceCategory.SQL
                       ? "bg-emerald-50 text-emerald-600"
-                      : resource.category === "Tools"
+                      : resource.category === ResourceCategory.Tools
                         ? "bg-slate-100 text-slate-600"
                         : "bg-indigo-50 text-indigo-600"
           }`}

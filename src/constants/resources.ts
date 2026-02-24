@@ -1,25 +1,29 @@
 import type { Resource } from "@/types/resources";
 
-export const resourceTypes = [
-  "All",
-  "Documentation",
-  "Guide",
-  "Exercise",
-  "Tool",
-  "Playground",
-  "Generator",
-] as const;
+export const ResourceType = {
+  All: "All",
+  Documentation: "Documentation",
+  Guide: "Guide",
+  Exercise: "Exercise",
+  Tool: "Tool",
+  Playground: "Playground",
+  Generator: "Generator",
+} as const;
 
-export const resourceCategories = [
-  "All",
-  "HTML",
-  "CSS",
-  "JS",
-  "Git",
-  "SQL",
-  "Tools",
-  "General",
-] as const;
+export const resourceTypes = Object.values(ResourceType);
+
+export const ResourceCategory = {
+  All: "All",
+  HTML: "HTML",
+  CSS: "CSS",
+  JS: "JS",
+  Git: "Git",
+  SQL: "SQL",
+  Tools: "Tools",
+  General: "General",
+} as const;
+
+export const resourceCategories = Object.values(ResourceCategory);
 
 export const resources: Resource[] = [
   // --- HTML ---

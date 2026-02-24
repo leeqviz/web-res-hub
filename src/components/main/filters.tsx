@@ -12,8 +12,8 @@ export function Filters() {
           <Filter className="w-4 h-4" />
           <span>Category:</span>
         </div>
-        {resourceCategories.map((cat) => (
-          <FilterCategoryButton key={cat} cat={cat} />
+        {resourceCategories.map((category) => (
+          <FilterCategoryButton key={category} category={category} />
         ))}
       </div>
 

@@ -4,4 +4,6 @@ export const TYPES = [
   "Guide",
   "Exercise",
   "Tool",
+  "Playground",
+  "Generator",
 ] as const;

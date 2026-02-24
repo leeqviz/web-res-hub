@@ -4,13 +4,18 @@ import {
   BookOpen,
   ChevronRight,
   Code2,
+  Database,
   ExternalLink,
   FileCode,
+  GitBranch,
   Globe,
   Palette,
+  Play,
   Search,
+  Terminal,
   Trophy,
   Wrench,
+  Zap,
 } from "lucide-react";
 import type { Dispatch, SetStateAction } from "react";
 
@@ -45,6 +50,12 @@ export function ResourceGrid({
         return <Palette className="w-4 h-4" />;
       case "JS":
         return <Code2 className="w-4 h-4" />;
+      case "Git":
+        return <GitBranch className="w-4 h-4" />;
+      case "SQL":
+        return <Database className="w-4 h-4" />;
+      case "Tools":
+        return <Terminal className="w-4 h-4" />;
       default:
         return <Globe className="w-4 h-4" />;
     }
@@ -58,6 +69,10 @@ export function ResourceGrid({
         return <Trophy className="w-4 h-4" />;
       case "Tool":
         return <Wrench className="w-4 h-4" />;
+      case "Playground":
+        return <Play className="w-4 h-4" />;
+      case "Generator":
+        return <Zap className="w-4 h-4" />;
       default:
         return <ChevronRight className="w-4 h-4" />;
     }
@@ -104,7 +119,13 @@ export function ResourceGrid({
                     ? "bg-blue-50 text-blue-600"
                     : resource.category === "JS"
                       ? "bg-yellow-50 text-yellow-600"
-                      : "bg-indigo-50 text-indigo-600"
+                      : resource.category === "Git"
+                        ? "bg-red-50 text-red-600"
+                        : resource.category === "SQL"
+                          ? "bg-emerald-50 text-emerald-600"
+                          : resource.category === "Tools"
+                            ? "bg-slate-100 text-slate-600"
+                            : "bg-indigo-50 text-indigo-600"
               }`}
             >
               {getCategoryIcon(resource.category)}

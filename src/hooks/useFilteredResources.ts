@@ -22,8 +22,10 @@ export function useFilteredResources({
         resource.tags.some((tag) =>
           tag.toLowerCase().includes(searchQuery.toLowerCase()),
         );
+
       const matchesCategory =
         activeCategory === "All" || resource.category === activeCategory;
+
       const matchesType = activeType === "All" || resource.type === activeType;
 
       return matchesSearch && matchesCategory && matchesType;

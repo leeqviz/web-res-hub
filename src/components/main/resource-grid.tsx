@@ -102,6 +102,9 @@ export function ResourceGrid({
     </div>
   ) : (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <p className="col-span-full text-center text-slate-500">
+        Showing {filteredResources.length} resources
+      </p>
       {filteredResources.map((resource) => (
         <a
           key={resource.id}

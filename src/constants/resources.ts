@@ -32,8 +32,8 @@ export const resources: Resource[] = [
     title: "MDN HTML Documentation",
     description: "The definitive source for HTML documentation and tutorials.",
     url: "https://developer.mozilla.org/en-US/docs/Web/HTML",
-    category: "HTML",
-    type: "Documentation",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Documentation,
     tags: ["Reference", "Beginner", "Official"],
   },
   {
@@ -41,8 +41,8 @@ export const resources: Resource[] = [
     title: "HTML Reference",
     description: "A free guide to all HTML elements and attributes.",
     url: "https://htmlreference.io",
-    category: "HTML",
-    type: "Documentation",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Documentation,
     tags: ["Reference", "Visual"],
   },
   {
@@ -50,8 +50,8 @@ export const resources: Resource[] = [
     title: "HTML5 Book",
     description: "Comprehensive Russian guide to HTML5 and web development.",
     url: "https://html5book.ru/",
-    category: "HTML",
-    type: "Guide",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Guide,
     tags: ["Russian", "Reference"],
   },
   {
@@ -59,8 +59,8 @@ export const resources: Resource[] = [
     title: "Interneting Is Hard",
     description: "Friendly web development tutorials for complete beginners.",
     url: "https://internetingishard.netlify.app/",
-    category: "HTML",
-    type: "Guide",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Guide,
     tags: ["Beginner", "Visual"],
   },
 
@@ -71,8 +71,8 @@ export const resources: Resource[] = [
     description:
       "A website about websites. Excellent for deep dives into CSS layouts and modern techniques.",
     url: "https://css-tricks.com",
-    category: "CSS",
-    type: "Guide",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Guide,
     tags: ["Articles", "Advanced", "Layout"],
   },
   {
@@ -81,8 +81,8 @@ export const resources: Resource[] = [
     description:
       "A game for learning CSS flexbox by helping Froggy and friends.",
     url: "https://flexboxfroggy.com",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Interactive", "Flexbox"],
   },
   {
@@ -90,8 +90,8 @@ export const resources: Resource[] = [
     title: "Grid Garden",
     description: "Learn CSS Grid by writing code to grow your carrot garden.",
     url: "https://cssgridgarden.com",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Interactive", "Grid"],
   },
   {
@@ -100,8 +100,8 @@ export const resources: Resource[] = [
     description:
       "A free visual guide to CSS. It features the most popular properties and explains them with illustrated and animated examples.",
     url: "https://cssreference.io",
-    category: "CSS",
-    type: "Documentation",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Documentation,
     tags: ["Visual", "Reference"],
   },
   {
@@ -110,8 +110,8 @@ export const resources: Resource[] = [
     description:
       "Use your CSS skills to replicate targets with the smallest possible code.",
     url: "https://cssbattle.dev/",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Competition", "Code Golf"],
   },
   {
@@ -119,8 +119,8 @@ export const resources: Resource[] = [
     title: "CSS Diner",
     description: "A fun game to learn and practice CSS selectors.",
     url: "https://flukeout.github.io/",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Selectors"],
   },
   {
@@ -129,8 +129,8 @@ export const resources: Resource[] = [
     description:
       "A tower defense game where you use flexbox to position your towers.",
     url: "http://www.flexboxdefense.com/",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Flexbox"],
   },
   {
@@ -138,8 +138,8 @@ export const resources: Resource[] = [
     title: "Knights of the Flexbox Table",
     description: "Learn flexbox through a series of knightly challenges.",
     url: "https://knightsoftheflexboxtable.com/",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Flexbox"],
   },
   {
@@ -148,8 +148,8 @@ export const resources: Resource[] = [
     description:
       "Improve your CSS skills with a new challenge every day for 100 days.",
     url: "https://100dayscss.com/",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Challenge", "Daily"],
   },
   {
@@ -158,8 +158,8 @@ export const resources: Resource[] = [
     description:
       "A place where you can play with a collection of ready to use CSS animations.",
     url: "https://animista.net/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Animation", "Visual"],
   },
   {
@@ -168,8 +168,8 @@ export const resources: Resource[] = [
     description:
       "A free tool that lets you create a gradient background for websites.",
     url: "https://cssgradient.io/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Gradient", "Visual"],
   },
   {
@@ -177,8 +177,8 @@ export const resources: Resource[] = [
     title: "Neumorphism.io",
     description: "Generate Soft-UI CSS code for your designs.",
     url: "https://neumorphism.io/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Design", "Neumorphism"],
   },
   {
@@ -187,8 +187,8 @@ export const resources: Resource[] = [
     description:
       "A free SVG wave generator to make unique SVG waves for your next web design.",
     url: "https://getwaves.io/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["SVG", "Waves"],
   },
   {
@@ -197,8 +197,8 @@ export const resources: Resource[] = [
     description:
       "Set the numbers and units of your columns and rows, and we'll generate a CSS grid for you!",
     url: "https://grid.layoutit.com/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Grid", "Layout"],
   },
   {
@@ -206,8 +206,8 @@ export const resources: Resource[] = [
     title: "Glassmorphism Generator",
     description: "Generate CSS for glassmorphism effects.",
     url: "https://css.glass/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Glassmorphism", "Design"],
   },
   {
@@ -215,8 +215,8 @@ export const resources: Resource[] = [
     title: "Flexbox Patterns",
     description: "A collection of user interface patterns for flexbox.",
     url: "https://flexboxpatterns.com/",
-    category: "CSS",
-    type: "Guide",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Guide,
     tags: ["Patterns", "Flexbox"],
   },
   {
@@ -224,8 +224,8 @@ export const resources: Resource[] = [
     title: "Modern CSS",
     description: "Modern CSS solutions for old CSS problems.",
     url: "https://moderncss.dev/",
-    category: "CSS",
-    type: "Guide",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Guide,
     tags: ["Modern", "Advanced"],
   },
   {
@@ -233,8 +233,8 @@ export const resources: Resource[] = [
     title: "CSS Grid Generator (Netlify)",
     description: "A simple tool to generate CSS grid layouts.",
     url: "https://cssgrid-generator.netlify.app/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Grid", "Layout"],
   },
   {
@@ -242,8 +242,8 @@ export const resources: Resource[] = [
     title: "CSS Grid Generator (IO)",
     description: "Another excellent CSS grid layout generator.",
     url: "https://cssgridgenerator.io/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Grid", "Layout"],
   },
   {
@@ -251,8 +251,8 @@ export const resources: Resource[] = [
     title: "Coding Fantasy",
     description: "Learn CSS through fun games and challenges.",
     url: "https://codingfantasy.com/",
-    category: "CSS",
-    type: "Exercise",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Exercise,
     tags: ["Game", "Interactive"],
   },
   {
@@ -260,8 +260,8 @@ export const resources: Resource[] = [
     title: "Bennett Feely Tools",
     description: "A collection of CSS tools like Clippy (clip-path maker).",
     url: "https://bennettfeely.com/",
-    category: "CSS",
-    type: "Tool",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Tool,
     tags: ["Clip-path", "Design"],
   },
   {
@@ -269,8 +269,8 @@ export const resources: Resource[] = [
     title: "Huemint",
     description: "AI color palette generator for your next project.",
     url: "https://huemint.com/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Colors", "AI"],
   },
   {
@@ -278,8 +278,8 @@ export const resources: Resource[] = [
     title: "CSS Specificity",
     description: "A visual guide to CSS specificity.",
     url: "https://specificity.keegan.st/",
-    category: "CSS",
-    type: "Documentation",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Documentation,
     tags: ["Specificity", "Visual"],
   },
   {
@@ -287,8 +287,8 @@ export const resources: Resource[] = [
     title: "CSS Portal",
     description: "A collection of CSS generators, tools, and resources.",
     url: "https://www.cssportal.com/",
-    category: "CSS",
-    type: "Tool",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Tool,
     tags: ["Generators", "Reference"],
   },
   {
@@ -296,8 +296,8 @@ export const resources: Resource[] = [
     title: "Can I Use",
     description: "Browser support tables for modern web technologies.",
     url: "https://caniuse.com/",
-    category: "CSS",
-    type: "Documentation",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Documentation,
     tags: ["Browser Support", "Reference"],
   },
   {
@@ -305,8 +305,8 @@ export const resources: Resource[] = [
     title: "Can I Email",
     description: "Support tables for HTML and CSS in email clients.",
     url: "https://www.caniemail.com/",
-    category: "CSS",
-    type: "Documentation",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Documentation,
     tags: ["Email", "Reference"],
   },
 
@@ -317,8 +317,8 @@ export const resources: Resource[] = [
     description:
       "From the basics to advanced topics with simple, but detailed explanations.",
     url: "https://javascript.info",
-    category: "JS",
-    type: "Guide",
+    category: ResourceCategory.JS,
+    type: ResourceType.Guide,
     tags: ["Comprehensive", "Deep Dive"],
   },
   {
@@ -327,8 +327,8 @@ export const resources: Resource[] = [
     description:
       "Improve your skills by training with others on real code challenges.",
     url: "https://www.codewars.com",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Challenges", "Problem Solving"],
   },
   {
@@ -337,8 +337,8 @@ export const resources: Resource[] = [
     description:
       "Build 30 things in 30 days with 30 tutorials. No libraries, no frameworks.",
     url: "https://javascript30.com",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Vanilla JS", "Projects", "Video"],
   },
   {
@@ -347,8 +347,8 @@ export const resources: Resource[] = [
     description:
       "The best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews.",
     url: "https://leetcode.com/",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Interview", "Algorithms", "Data Structures"],
   },
   {
@@ -356,8 +356,8 @@ export const resources: Resource[] = [
     title: "JS Challenger",
     description: "Learn Javascript by solving coding challenges.",
     url: "https://www.jschallenger.com/",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Challenges", "Beginner"],
   },
   {
@@ -366,8 +366,8 @@ export const resources: Resource[] = [
     description:
       "A modern introduction to programming and the JavaScript language.",
     url: "https://eloquentjavascript.net/",
-    category: "JS",
-    type: "Guide",
+    category: ResourceCategory.JS,
+    type: ResourceType.Guide,
     tags: ["Book", "Comprehensive"],
   },
   {
@@ -375,8 +375,8 @@ export const resources: Resource[] = [
     title: "Learn-JS.org",
     description: "Interactive JavaScript tutorial for beginners.",
     url: "https://www.learn-js.org/",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Tutorial", "Interactive"],
   },
   {
@@ -384,8 +384,8 @@ export const resources: Resource[] = [
     title: "Edabit",
     description: "Learn to code with 10,000+ interactive challenges.",
     url: "https://edabit.com/",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Challenges", "Interactive"],
   },
   {
@@ -393,8 +393,8 @@ export const resources: Resource[] = [
     title: "BigFrontend",
     description: "Prepare for front-end interviews with coding challenges.",
     url: "https://bigfrontend.dev/",
-    category: "JS",
-    type: "Exercise",
+    category: ResourceCategory.JS,
+    type: ResourceType.Exercise,
     tags: ["Interview", "Challenges"],
   },
   {
@@ -403,8 +403,8 @@ export const resources: Resource[] = [
     description:
       "Short JavaScript code snippets for all your development needs.",
     url: "https://www.30secondsofcode.org/",
-    category: "JS",
-    type: "Guide",
+    category: ResourceCategory.JS,
+    type: ResourceType.Guide,
     tags: ["Snippets", "Reference"],
   },
 
@@ -415,8 +415,8 @@ export const resources: Resource[] = [
     description:
       "Interactive coding platform with thousands of hours of free curriculum.",
     url: "https://www.freecodecamp.org",
-    category: "General",
-    type: "Exercise",
+    category: ResourceCategory.General,
+    type: ResourceType.Exercise,
     tags: ["Certification", "Full Stack", "Community"],
   },
   {
@@ -425,8 +425,8 @@ export const resources: Resource[] = [
     description:
       "Google's platform for web developers to learn about performance, accessibility, and modern web APIs.",
     url: "https://web.dev",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Performance", "Best Practices", "Google"],
   },
   {
@@ -435,8 +435,8 @@ export const resources: Resource[] = [
     description:
       "Improve your front-end skills by building real projects. Solve real-world HTML, CSS and JS challenges.",
     url: "https://www.frontendmentor.io",
-    category: "General",
-    type: "Exercise",
+    category: ResourceCategory.General,
+    type: ResourceType.Exercise,
     tags: ["Projects", "Design", "Portfolio"],
   },
   {
@@ -445,8 +445,8 @@ export const resources: Resource[] = [
     description:
       "The world's largest web developer site with tutorials and references.",
     url: "https://www.w3schools.com/",
-    category: "General",
-    type: "Documentation",
+    category: ResourceCategory.General,
+    type: ResourceType.Documentation,
     tags: ["Beginner", "Reference"],
   },
   {
@@ -455,8 +455,8 @@ export const resources: Resource[] = [
     description:
       "Your career in web development starts here. A full stack curriculum that is free and open source.",
     url: "https://www.theodinproject.com/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Full Stack", "Curriculum"],
   },
   {
@@ -465,8 +465,8 @@ export const resources: Resource[] = [
     description:
       "Learn React, Redux, Node.js, MongoDB, GraphQL and TypeScript in one go!",
     url: "https://fullstackopen.com/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["University", "Advanced", "Full Stack"],
   },
   {
@@ -475,8 +475,8 @@ export const resources: Resource[] = [
     description:
       "Step by step guides and paths to learn different technologies.",
     url: "https://roadmap.sh/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Career", "Learning Path"],
   },
   {
@@ -485,8 +485,8 @@ export const resources: Resource[] = [
     description:
       "A community-driven effort to make digital accessibility easier.",
     url: "https://www.a11yproject.com/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Accessibility", "Best Practices"],
   },
   {
@@ -495,8 +495,8 @@ export const resources: Resource[] = [
     description:
       "A free book on design patterns and component patterns for building powerful web apps.",
     url: "https://www.patterns.dev/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Design Patterns", "Architecture"],
   },
   {
@@ -505,8 +505,8 @@ export const resources: Resource[] = [
     description:
       "A blog trying to be a pattern library, with a focus on accessibility.",
     url: "https://inclusive-components.design/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Accessibility", "Components"],
   },
   {
@@ -514,8 +514,8 @@ export const resources: Resource[] = [
     title: "HTTP.dev",
     description: "A comprehensive guide to the HTTP protocol.",
     url: "https://http.dev/",
-    category: "General",
-    type: "Documentation",
+    category: ResourceCategory.General,
+    type: ResourceType.Documentation,
     tags: ["HTTP", "Networking"],
   },
 
@@ -525,8 +525,8 @@ export const resources: Resource[] = [
     title: "Git Tower Learn",
     description: "Learn Git with the best tutorials, videos, and cheat sheets.",
     url: "https://www.git-tower.com/learn/git/ebook/en/command-line/introduction",
-    category: "Git",
-    type: "Guide",
+    category: ResourceCategory.Git,
+    type: ResourceType.Guide,
     tags: ["Version Control", "Ebook"],
   },
   {
@@ -535,8 +535,8 @@ export const resources: Resource[] = [
     description:
       "An interactive Git visualization tool to learn Git branching.",
     url: "https://learngitbranching.js.org/",
-    category: "Git",
-    type: "Exercise",
+    category: ResourceCategory.Git,
+    type: ResourceType.Exercise,
     tags: ["Interactive", "Visualization"],
   },
   {
@@ -544,8 +544,8 @@ export const resources: Resource[] = [
     title: "Git How To",
     description: "A guided tour that walks through the fundamentals of Git.",
     url: "https://githowto.com/",
-    category: "Git",
-    type: "Guide",
+    category: ResourceCategory.Git,
+    type: ResourceType.Guide,
     tags: ["Tutorial", "Fundamentals"],
   },
   {
@@ -554,8 +554,8 @@ export const resources: Resource[] = [
     description:
       "Git is hard: screwing up is easy, and figuring out how to fix your mistakes is barely documented.",
     url: "https://ohshitgit.com/",
-    category: "Git",
-    type: "Guide",
+    category: ResourceCategory.Git,
+    type: ResourceType.Guide,
     tags: ["Troubleshooting", "Humor"],
   },
   {
@@ -564,8 +564,8 @@ export const resources: Resource[] = [
     description:
       "A specification for adding human and machine readable meaning to commit messages.",
     url: "https://www.conventionalcommits.org/",
-    category: "Git",
-    type: "Documentation",
+    category: ResourceCategory.Git,
+    type: ResourceType.Documentation,
     tags: ["Best Practices", "Workflow"],
   },
   {
@@ -573,8 +573,8 @@ export const resources: Resource[] = [
     title: "Git Cheat Sheet (Chinese)",
     description: "A comprehensive Git cheat sheet in Chinese.",
     url: "https://git.gaozih.com/",
-    category: "Git",
-    type: "Documentation",
+    category: ResourceCategory.Git,
+    type: ResourceType.Documentation,
     tags: ["Chinese", "Cheat Sheet"],
   },
 
@@ -584,8 +584,8 @@ export const resources: Resource[] = [
     title: "SQLBolt",
     description: "Learn SQL with interactive exercises.",
     url: "https://sqlbolt.com/",
-    category: "SQL",
-    type: "Exercise",
+    category: ResourceCategory.SQL,
+    type: ResourceType.Exercise,
     tags: ["Database", "Interactive"],
   },
   {
@@ -593,8 +593,8 @@ export const resources: Resource[] = [
     title: "SQLZoo",
     description: "Interactive SQL tutorial with many examples and quizzes.",
     url: "https://sqlzoo.net/",
-    category: "SQL",
-    type: "Exercise",
+    category: ResourceCategory.SQL,
+    type: ResourceType.Exercise,
     tags: ["Database", "Interactive"],
   },
   {
@@ -603,8 +603,8 @@ export const resources: Resource[] = [
     description:
       "An interactive SQL book which aims to be the best place on the internet for learning SQL.",
     url: "https://selectstarsql.com/",
-    category: "SQL",
-    type: "Guide",
+    category: ResourceCategory.SQL,
+    type: ResourceType.Guide,
     tags: ["Database", "Book"],
   },
   {
@@ -612,8 +612,8 @@ export const resources: Resource[] = [
     title: "MongoDB University",
     description: "Free online courses for learning MongoDB.",
     url: "https://learn.mongodb.com/",
-    category: "SQL",
-    type: "Guide",
+    category: ResourceCategory.SQL,
+    type: ResourceType.Guide,
     tags: ["NoSQL", "Database"],
   },
   {
@@ -621,8 +621,8 @@ export const resources: Resource[] = [
     title: "SQL Murder Mystery",
     description: "A fun game to learn SQL by solving a murder mystery.",
     url: "https://mystery.knightlab.com/",
-    category: "SQL",
-    type: "Exercise",
+    category: ResourceCategory.SQL,
+    type: ResourceType.Exercise,
     tags: ["Game", "Interactive"],
   },
   {
@@ -630,8 +630,8 @@ export const resources: Resource[] = [
     title: "DB Fiddle",
     description: "An online SQL playground for testing and sharing queries.",
     url: "https://www.db-fiddle.com/",
-    category: "SQL",
-    type: "Playground",
+    category: ResourceCategory.SQL,
+    type: ResourceType.Playground,
     tags: ["Database", "Testing"],
   },
 
@@ -641,8 +641,8 @@ export const resources: Resource[] = [
     title: "StackBlitz",
     description: "The fastest, most secure dev environment on the planet.",
     url: "https://stackblitz.com/",
-    category: "Tools",
-    type: "Playground",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Playground,
     tags: ["IDE", "Online"],
   },
   {
@@ -650,8 +650,8 @@ export const resources: Resource[] = [
     title: "Tailwind Play",
     description: "An advanced online playground for Tailwind CSS.",
     url: "https://play.tailwindcss.com/",
-    category: "Tools",
-    type: "Playground",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Playground,
     tags: ["CSS", "Tailwind"],
   },
   {
@@ -660,8 +660,8 @@ export const resources: Resource[] = [
     description:
       "Combines multiple API documentations in a fast, organized, and searchable interface.",
     url: "https://devdocs.io/",
-    category: "Tools",
-    type: "Documentation",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Documentation,
     tags: ["Reference", "Offline"],
   },
   {
@@ -670,8 +670,8 @@ export const resources: Resource[] = [
     description:
       "Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript.",
     url: "https://regex101.com/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["Regex", "Debugger"],
   },
   {
@@ -680,8 +680,8 @@ export const resources: Resource[] = [
     description:
       "The world's leading API platform for building and using APIs.",
     url: "https://www.postman.com/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["API", "Testing"],
   },
   {
@@ -689,8 +689,8 @@ export const resources: Resource[] = [
     title: "Uiverse",
     description: "Open-source UI elements for any project.",
     url: "https://uiverse.io/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["UI", "Components"],
   },
   {
@@ -699,8 +699,8 @@ export const resources: Resource[] = [
     description:
       "Squoosh is the ultimate image optimizer that allows you to compress and compare images with different codecs in your browser.",
     url: "https://squoosh.app/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["Images", "Optimization"],
   },
   {
@@ -709,8 +709,8 @@ export const resources: Resource[] = [
     description:
       "Search, explore and edit the best-fitting free icons or vectors for your projects.",
     url: "https://www.svgrepo.com/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["SVG", "Icons"],
   },
   {
@@ -718,8 +718,8 @@ export const resources: Resource[] = [
     title: "CodyHouse",
     description: "A library of accessible HTML, CSS, JavaScript components.",
     url: "https://codyhouse.co/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["Components", "Accessibility"],
   },
   {
@@ -727,8 +727,8 @@ export const resources: Resource[] = [
     title: "Codrops",
     description: "Creative front-end resources and inspiration.",
     url: "https://tympanus.net/codrops/",
-    category: "Tools",
-    type: "Guide",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Guide,
     tags: ["Inspiration", "Animation"],
   },
   {
@@ -737,8 +737,8 @@ export const resources: Resource[] = [
     description:
       "A collective list of free APIs for use in software and web development.",
     url: "https://publicapis.io/",
-    category: "Tools",
-    type: "Documentation",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Documentation,
     tags: ["API", "List"],
   },
   {
@@ -746,8 +746,8 @@ export const resources: Resource[] = [
     title: "SVG Viewer",
     description: "An online tool to view, edit, and optimize SVG files.",
     url: "https://www.svgviewer.dev/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["SVG", "Optimization"],
   },
   {
@@ -755,8 +755,8 @@ export const resources: Resource[] = [
     title: "JSON Formatter",
     description: "Online JSON Formatter and Validator.",
     url: "https://jsonformatter.org/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["JSON", "Formatter"],
   },
   {
@@ -764,8 +764,8 @@ export const resources: Resource[] = [
     title: "JSONPlaceholder",
     description: "Free fake API for testing and prototyping.",
     url: "https://jsonplaceholder.typicode.com/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["API", "Mock"],
   },
   {
@@ -773,8 +773,8 @@ export const resources: Resource[] = [
     title: "Codeshare",
     description: "Share code in real-time with other developers.",
     url: "https://codeshare.io/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["Collaboration", "Real-time"],
   },
   {
@@ -783,8 +783,8 @@ export const resources: Resource[] = [
     description:
       "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.",
     url: "https://jsfiddle.net/",
-    category: "Tools",
-    type: "Playground",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Playground,
     tags: ["Editor", "Online"],
   },
   {
@@ -792,8 +792,8 @@ export const resources: Resource[] = [
     title: "Hoppscotch",
     description: "Open source API development ecosystem.",
     url: "https://hoppscotch.io/",
-    category: "Tools",
-    type: "Tool",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
     tags: ["API", "Testing"],
   },
   {
@@ -801,8 +801,8 @@ export const resources: Resource[] = [
     title: "Real Favicon Generator",
     description: "The ultimate favicon generator for all platforms.",
     url: "https://realfavicongenerator.net/",
-    category: "Tools",
-    type: "Generator",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Generator,
     tags: ["Favicon", "Design"],
   },
   {
@@ -810,8 +810,8 @@ export const resources: Resource[] = [
     title: "Favicon.io",
     description: "The only favicon generator you need for your next project.",
     url: "https://favicon.io/",
-    category: "Tools",
-    type: "Generator",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Generator,
     tags: ["Favicon", "Design"],
   },
   {
@@ -819,8 +819,8 @@ export const resources: Resource[] = [
     title: "CSS Generator PL",
     description: "A comprehensive collection of CSS generators.",
     url: "https://cssgenerator.pl/",
-    category: "CSS",
-    type: "Generator",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
     tags: ["Polish", "Generators"],
   },
   {
@@ -828,8 +828,8 @@ export const resources: Resource[] = [
     title: "CourseHunter",
     description: "A platform for finding and sharing development courses.",
     url: "https://coursehunter.net/",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Courses", "Learning"],
   },
   {
@@ -837,8 +837,8 @@ export const resources: Resource[] = [
     title: "HackFrontend",
     description: "Front-end development challenges and tutorials.",
     url: "https://www.hackfrontend.com/",
-    category: "General",
-    type: "Exercise",
+    category: ResourceCategory.General,
+    type: ResourceType.Exercise,
     tags: ["Challenges", "Front-end"],
   },
   {
@@ -846,8 +846,8 @@ export const resources: Resource[] = [
     title: "Doka Guide",
     description: "A comprehensive guide to web development in Russian.",
     url: "https://doka.guide/",
-    category: "General",
-    type: "Documentation",
+    category: ResourceCategory.General,
+    type: ResourceType.Documentation,
     tags: ["Russian", "Reference"],
   },
   {
@@ -855,8 +855,8 @@ export const resources: Resource[] = [
     title: "Node.js Best Practices",
     description: "The most comprehensive list of Node.js best practices.",
     url: "https://github.com/goldbergyoni/nodebestpractices",
-    category: "General",
-    type: "Guide",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
     tags: ["Node.js", "Backend", "Best Practices"],
   },
   {
@@ -864,8 +864,8 @@ export const resources: Resource[] = [
     title: "OverAPI",
     description: "Collecting all cheat sheets in one place.",
     url: "https://overapi.com/",
-    category: "Tools",
-    type: "Documentation",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Documentation,
     tags: ["Cheat Sheets", "Reference"],
   },
   {
@@ -873,8 +873,8 @@ export const resources: Resource[] = [
     title: "DevHints",
     description: "A collection of cheat sheets for developers.",
     url: "https://devhints.io/",
-    category: "Tools",
-    type: "Documentation",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Documentation,
     tags: ["Cheat Sheets", "Reference"],
   },
   {
@@ -882,8 +882,8 @@ export const resources: Resource[] = [
     title: "QuickRef.me",
     description: "Cheat sheets for developers and programmers.",
     url: "https://quickref.me/",
-    category: "Tools",
-    type: "Documentation",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Documentation,
     tags: ["Cheat Sheets", "Reference"],
   },
   {
@@ -891,8 +891,8 @@ export const resources: Resource[] = [
     title: "Regex Generator",
     description: "A tool to generate regular expressions from text.",
     url: "https://regex-generator.olafneumann.org/",
-    category: "Tools",
-    type: "Generator",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Generator,
     tags: ["Regex", "Generator"],
   },
 ];

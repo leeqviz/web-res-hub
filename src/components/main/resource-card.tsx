@@ -1,4 +1,4 @@
-import { ResourceCategory } from "@/constants";
+import { ResourceCategory, ResourceType } from "@/constants";
 import type { Resource } from "@/types";
 import {
   BookOpen,
@@ -20,17 +20,17 @@ import {
 export function ResourceCard({ resource }: { resource: Resource }) {
   const getCategoryIcon = (category: string) => {
     switch (category) {
-      case "HTML":
+      case ResourceCategory.HTML:
         return <FileCode className="w-4 h-4" />;
-      case "CSS":
+      case ResourceCategory.CSS:
         return <Palette className="w-4 h-4" />;
-      case "JS":
+      case ResourceCategory.JS:
         return <Code2 className="w-4 h-4" />;
-      case "Git":
+      case ResourceCategory.Git:
         return <GitBranch className="w-4 h-4" />;
-      case "SQL":
+      case ResourceCategory.SQL:
         return <Database className="w-4 h-4" />;
-      case "Tools":
+      case ResourceCategory.Tools:
         return <Terminal className="w-4 h-4" />;
       default:
         return <Globe className="w-4 h-4" />;
@@ -39,18 +39,54 @@ export function ResourceCard({ resource }: { resource: Resource }) {
 
   const getTypeIcon = (type: string) => {
     switch (type) {
-      case "Documentation":
+      case ResourceType.Documentation:
         return <BookOpen className="w-4 h-4" />;
-      case "Exercise":
+      case ResourceType.Exercise:
         return <Trophy className="w-4 h-4" />;
-      case "Tool":
+      case ResourceType.Tool:
         return <Wrench className="w-4 h-4" />;
-      case "Playground":
+      case ResourceType.Playground:
         return <Play className="w-4 h-4" />;
-      case "Generator":
+      case ResourceType.Generator:
         return <Zap className="w-4 h-4" />;
       default:
         return <ChevronRight className="w-4 h-4" />;
+    }
+  };
+
+  const getCategoryColor = (category: string) => {
+    switch (category) {
+      case ResourceCategory.HTML:
+        return "bg-orange-50 text-orange-600";
+      case ResourceCategory.CSS:
+        return "bg-blue-50 text-blue-600";
+      case ResourceCategory.JS:
+        return "bg-yellow-50 text-yellow-600";
+      case ResourceCategory.Git:
+        return "bg-red-50 text-red-600";
+      case ResourceCategory.SQL:
+        return "bg-emerald-50 text-emerald-600";
+      case ResourceCategory.Tools:
+        return "bg-slate-100 text-slate-600";
+      default:
+        return "bg-indigo-50 text-indigo-600";
+    }
+  };
+
+  const getTypeColor = (type: string) => {
+    switch (type) {
+      case ResourceType.Documentation:
+        return "bg-indigo-50 text-indigo-600";
+      case ResourceType.Exercise:
+        return "bg-orange-50 text-orange-600";
+      case ResourceType.Tool:
+        return "bg-red-50 text-red-600";
+      case ResourceType.Playground:
+        return "bg-yellow-50 text-yellow-600";
+      case ResourceType.Generator:
+        return "bg-green-50 text-green-600";
+      default:
+        return "bg-slate-100 text-slate-600";
     }
   };
 
@@ -63,21 +99,7 @@ export function ResourceCard({ resource }: { resource: Resource }) {
     >
       <div className="flex justify-between items-start mb-4">
         <div
-          className={`p-2 rounded-lg ${
-            resource.category === ResourceCategory.HTML
-              ? "bg-orange-50 text-orange-600"
-              : resource.category === ResourceCategory.CSS
-                ? "bg-blue-50 text-blue-600"
-                : resource.category === ResourceCategory.JS
-                  ? "bg-yellow-50 text-yellow-600"
-                  : resource.category === ResourceCategory.Git
-                    ? "bg-red-50 text-red-600"
-                    : resource.category === ResourceCategory.SQL
-                      ? "bg-emerald-50 text-emerald-600"
-                      : resource.category === ResourceCategory.Tools
-                        ? "bg-slate-100 text-slate-600"
-                        : "bg-indigo-50 text-indigo-600"
-          }`}
+          className={`p-2 rounded-lg ${getCategoryColor(resource.category)}`}
         >
           {getCategoryIcon(resource.category)}
         </div>
@@ -91,11 +113,14 @@ export function ResourceCard({ resource }: { resource: Resource }) {
         {resource.description}
       </p>
 
+      <span
+        className={`inline-flex items-center gap-1 px-2 py-1 rounded ${getTypeColor(resource.type)} text-[10px] font-bold uppercase tracking-wider`}
+      >
+        {getTypeIcon(resource.type)}
+        {resource.type}
+      </span>
+      <br />
       <div className="flex flex-wrap gap-2 mt-auto">
-        <span className="inline-flex items-center gap-1 px-2 py-1 rounded bg-slate-100 text-slate-600 text-[10px] font-bold uppercase tracking-wider">
-          {getTypeIcon(resource.type)}
-          {resource.type}
-        </span>
         {resource.tags.map((tag) => (
           <span
             key={tag}

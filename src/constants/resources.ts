@@ -25,6 +25,34 @@ export const ResourceCategory = {
 
 export const resourceCategories = Object.values(ResourceCategory);
 
+/*
+TODO add more resources
+https://blgardner.github.io/prism.tools/
+https://interview.cups.online/
+https://quicktype.io/
+https://validator.w3.org/
+https://caninclude.onrender.com/
+https://yoksel.github.io/html-tree/
+https://www.toptal.com/developers/keycode
+https://jsonformatter.curiousconcept.com/
+https://jakearchibald.github.io/svgomg/
+https://unsplash.com/
+https://realfavicongenerator.net/
+https://htmlacademy.github.io/md2html/
+https://devdocs.io/
+https://cheatsheets.zip/
+https://app.daily.dev/onboarding?stepId=signup
+https://medusajs.com/
+https://storytale.io/
+https://programmerhumor.io/
+https://codebeautify.org/
+https://responsively.app/
+https://colorhunt.co/
+https://logoipsum.com/
+https://color.hailpixel.com/
+https://patternizer.com/ae73x
+*/
+
 export const resources: Resource[] = [
   // --- HTML ---
   {

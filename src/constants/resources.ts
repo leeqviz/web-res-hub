@@ -25,34 +25,6 @@ export const ResourceCategory = {
 
 export const resourceCategories = Object.values(ResourceCategory);
 
-/*
-TODO add more resources
-https://blgardner.github.io/prism.tools/
-https://interview.cups.online/
-https://quicktype.io/
-https://validator.w3.org/
-https://caninclude.onrender.com/
-https://yoksel.github.io/html-tree/
-https://www.toptal.com/developers/keycode
-https://jsonformatter.curiousconcept.com/
-https://jakearchibald.github.io/svgomg/
-https://unsplash.com/
-https://realfavicongenerator.net/
-https://htmlacademy.github.io/md2html/
-https://devdocs.io/
-https://cheatsheets.zip/
-https://app.daily.dev/onboarding?stepId=signup
-https://medusajs.com/
-https://storytale.io/
-https://programmerhumor.io/
-https://codebeautify.org/
-https://responsively.app/
-https://colorhunt.co/
-https://logoipsum.com/
-https://color.hailpixel.com/
-https://patternizer.com/ae73x
-*/
-
 export const resources: Resource[] = [
   // --- HTML ---
   {
@@ -922,5 +894,296 @@ export const resources: Resource[] = [
     category: ResourceCategory.Tools,
     type: ResourceType.Generator,
     tags: ["Regex", "Generator"],
+  },
+  {
+    id: "prism-tools",
+    title: "Prism Tools",
+    description:
+      "A collection of tools for working with Prism.js and syntax highlighting.",
+    url: "https://blgardner.github.io/prism.tools/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Syntax Highlighting", "Prism.js"],
+  },
+  {
+    id: "interview-cups",
+    title: "Interview Cups",
+    description:
+      "Interactive platform for practicing front-end interview questions.",
+    url: "https://interview.cups.online/",
+    category: ResourceCategory.General,
+    type: ResourceType.Exercise,
+    tags: ["Interview", "Challenges"],
+  },
+  {
+    id: "quicktype",
+    title: "Quicktype",
+    description:
+      "Generate types and converters from JSON, Schema, and GraphQL.",
+    url: "https://quicktype.io/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Generator,
+    tags: ["Types", "JSON", "Converter"],
+  },
+  {
+    id: "w3c-validator",
+    title: "W3C Markup Validator",
+    description: "Check the markup (HTML, XHTML, ...) of Web documents.",
+    url: "https://validator.w3.org/",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Tool,
+    tags: ["Validation", "Official"],
+  },
+  {
+    id: "can-include",
+    title: "Can Include",
+    description: "Check if an HTML element can be included inside another.",
+    url: "https://caninclude.onrender.com/",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Tool,
+    tags: ["Validation", "Nesting"],
+  },
+  {
+    id: "html-tree",
+    title: "HTML Tree",
+    description: "Visualize the structure of your HTML document.",
+    url: "https://yoksel.github.io/html-tree/",
+    category: ResourceCategory.HTML,
+    type: ResourceType.Tool,
+    tags: ["Visualization", "Structure"],
+  },
+  {
+    id: "keycode-info",
+    title: "Keycode Info",
+    description: "JavaScript event keycode tool by Toptal.",
+    url: "https://www.toptal.com/developers/keycode",
+    category: ResourceCategory.JS,
+    type: ResourceType.Tool,
+    tags: ["Events", "Keyboard"],
+  },
+  {
+    id: "json-formatter-curious",
+    title: "JSON Formatter & Validator",
+    description: "Format, validate, and explore your JSON data.",
+    url: "https://jsonformatter.curiousconcept.com/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["JSON", "Formatter"],
+  },
+  {
+    id: "svgomg",
+    title: "SVGOMG",
+    description: "SVGO's missing GUI - optimize your SVG files in the browser.",
+    url: "https://jakearchibald.github.io/svgomg/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["SVG", "Optimization"],
+  },
+  {
+    id: "unsplash",
+    title: "Unsplash",
+    description:
+      "Beautiful, free images and photos that you can download and use for any project.",
+    url: "https://unsplash.com/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Images", "Assets"],
+  },
+  {
+    id: "md2html",
+    title: "MD to HTML",
+    description: "Convert Markdown to HTML online.",
+    url: "https://htmlacademy.github.io/md2html/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Markdown", "Converter"],
+  },
+  {
+    id: "cheatsheets-zip",
+    title: "Cheatsheets.zip",
+    description: "A collection of developer cheat sheets in a single place.",
+    url: "https://cheatsheets.zip/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Documentation,
+    tags: ["Cheat Sheets", "Reference"],
+  },
+  {
+    id: "daily-dev",
+    title: "daily.dev",
+    description: "The professional network for developers to stay updated.",
+    url: "https://app.daily.dev/onboarding?stepId=signup",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
+    tags: ["News", "Community"],
+  },
+  {
+    id: "medusajs",
+    title: "Medusa",
+    description: "The open-source Shopify alternative.",
+    url: "https://medusajs.com/",
+    category: ResourceCategory.General,
+    type: ResourceType.Documentation,
+    tags: ["E-commerce", "Node.js"],
+  },
+  {
+    id: "storytale",
+    title: "Storytale",
+    description: "High-class illustrations for your web projects.",
+    url: "https://storytale.io/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Illustrations", "Assets"],
+  },
+  {
+    id: "programmer-humor",
+    title: "Programmer Humor",
+    description: "A place for developers to relax and laugh.",
+    url: "https://programmerhumor.io/",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
+    tags: ["Humor", "Community"],
+  },
+  {
+    id: "code-beautify",
+    title: "Code Beautify",
+    description: "Online scripts to beautify, format, and convert code.",
+    url: "https://codebeautify.org/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Formatter", "Converter"],
+  },
+  {
+    id: "responsively-app",
+    title: "Responsively App",
+    description: "A must-have tool for responsive web development.",
+    url: "https://responsively.app/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Responsive", "Testing"],
+  },
+  {
+    id: "color-hunt",
+    title: "Color Hunt",
+    description:
+      "Open platform for color inspiration with thousands of trendy hand-picked color palettes.",
+    url: "https://colorhunt.co/",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
+    tags: ["Colors", "Design"],
+  },
+  {
+    id: "logoipsum",
+    title: "Logoipsum",
+    description: "Free placeholder logos for your designs.",
+    url: "https://logoipsum.com/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Logos", "Assets"],
+  },
+  {
+    id: "color-hailpixel",
+    title: "Color by Hailpixel",
+    description: "A simple and intuitive color picker.",
+    url: "https://color.hailpixel.com/",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
+    tags: ["Colors", "Picker"],
+  },
+  {
+    id: "patternizer",
+    title: "Patternizer",
+    description: "A simple stripe pattern generator.",
+    url: "https://patternizer.com/ae73x",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
+    tags: ["Patterns", "Design"],
+  },
+  {
+    id: "seostudio",
+    title: "SEO Studio",
+    description:
+      "A collection of free SEO tools to help you analyze and optimize your website.",
+    url: "https://seostudio.tools/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["SEO", "Optimization"],
+  },
+  {
+    id: "css-loaders",
+    title: "CSS Loaders",
+    description:
+      "The biggest collection of loading animations built with pure CSS.",
+    url: "https://css-loaders.com/",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Generator,
+    tags: ["Animation", "Loaders"],
+  },
+  {
+    id: "codedex",
+    title: "Codédex",
+    description:
+      "A new way to learn how to code. Journey through the land of Python, HTML, CSS, or JavaScript.",
+    url: "https://www.codedex.io/",
+    category: ResourceCategory.General,
+    type: ResourceType.Exercise,
+    tags: ["Learning", "Interactive"],
+  },
+  {
+    id: "learn-anything",
+    title: "Learn Anything",
+    description:
+      "The platform for knowledge discovery. Help you find the best resources to learn anything.",
+    url: "https://learn-anything.xyz/",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
+    tags: ["Discovery", "Learning"],
+  },
+  {
+    id: "visualgo",
+    title: "VisuAlgo",
+    description:
+      "Visualising data structures and algorithms through animation.",
+    url: "https://visualgo.net/",
+    category: ResourceCategory.JS,
+    type: ResourceType.Guide,
+    tags: ["Algorithms", "Data Structures", "Visualization"],
+  },
+  {
+    id: "jsoncrack",
+    title: "JSON Crack",
+    description: "Visualize your JSON data into interactive graphs.",
+    url: "https://jsoncrack.com/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["JSON", "Visualization"],
+  },
+  {
+    id: "ray-so",
+    title: "Ray.so",
+    description: "Create beautiful images of your code snippets.",
+    url: "https://ray.so/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Snippets", "Images"],
+  },
+  {
+    id: "josh-w-comeau",
+    title: "Josh W. Comeau",
+    description:
+      "Excellent articles and tutorials on React, CSS, and web development.",
+    url: "https://www.joshwcomeau.com/",
+    category: ResourceCategory.General,
+    type: ResourceType.Guide,
+    tags: ["React", "CSS", "Blog"],
+  },
+  {
+    id: "css-tip",
+    title: "CSS Tip",
+    description:
+      "A collection of CSS tips and tricks to solve common problems.",
+    url: "https://css-tip.com/",
+    category: ResourceCategory.CSS,
+    type: ResourceType.Guide,
+    tags: ["Tips", "Tricks"],
   },
 ];

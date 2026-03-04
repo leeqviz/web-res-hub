@@ -1186,4 +1186,14 @@ export const resources: Resource[] = [
     type: ResourceType.Guide,
     tags: ["Tips", "Tricks"],
   },
+  {
+    id: "readme-so",
+    title: "Readme.so",
+    description:
+      "A simple tool to create beautiful README files for your projects.",
+    url: "https://readme.so/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Generator,
+    tags: ["README", "Documentation"],
+  },
 ];

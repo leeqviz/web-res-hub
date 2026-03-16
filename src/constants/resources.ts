@@ -570,12 +570,12 @@ export const resources: Resource[] = [
   },
   {
     id: "git-gaozih",
-    title: "Git Cheat Sheet (Chinese)",
-    description: "A comprehensive Git cheat sheet in Chinese.",
+    title: "Git Cheat Sheet",
+    description: "A comprehensive Git cheat sheet.",
     url: "https://git.gaozih.com/",
     category: ResourceCategory.Git,
     type: ResourceType.Documentation,
-    tags: ["Chinese", "Cheat Sheet"],
+    tags: ["Version Control", "Cheat Sheet"],
   },
 
   // --- SQL ---

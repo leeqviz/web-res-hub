@@ -1186,4 +1186,13 @@ export const resources: Resource[] = [
     type: ResourceType.Guide,
     tags: ["Tips", "Tricks"],
   },
+  {
+    id: "composerize",
+    title: "Composerize",
+    description: "Convert docker commands to docker compose.yaml",
+    url: "https://composerize.com/",
+    category: ResourceCategory.Tools,
+    type: ResourceType.Tool,
+    tags: ["Docker", "Compose"],
+  },
 ];
